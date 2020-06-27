@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+     <link rel="stylesheet" href="fonts.css">
+     <link rel="stylesheet" href="styles.css">
+    <title>Bali_project</title>
+</head>
+<body>
+  <div class = "menu-mobile">
+    <div class = "menu-mobile__wrapper">
+      <div class = "menu-mobile__burger"></div>
+      <div class = "menu-mobile__links">
+      <a class="menu-mobile__links-item">start</a>
+      <a class="menu-mobile__links-item">services</a>
+      <a class="menu-mobile__links-item">about</a>
+      <a class="menu-mobile__links-item">blog</a>
+      <a class="menu-mobile__links-item">contact us</a>
+    </div>
+    </div>
+  </div>
+  <div class="background-image">
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo-main" src="img/Vector.png" alt="logotip_World of Travel and plain" />
+       </div>
+      <nav class="header__menu">
+        <a class="header__menu-link" href="/">Start</a>
+        <a class="header__menu-link" href="/">Services</a>
+        <a class="header__menu-link" href="/">About</a>
+        <a class="header__menu-link" href="/">Blog</a>
+        <a class="header__menu-link" href="/">Contact us</a>
+      </nav>
+      <div class="header__menu-icon"> 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </header>
+  <div class="section__main">
+    <section class="section">
+      <div class="section__title">
+       <h1 class="section__title-main"> Bali </h1>
+         <h2 class="section__title-secondary"> Indonesia </h2>
+      </div>
+        <p class="section__text-block"> 
+          Best Bali travel guide with great tips. Book hotels and villas, explore the best spas, events, Bali temples, scuba centers, and activities.
+        </p>
+        <div class="button">
+          <button class="button__click">Book travel</button>
+        </div>
+    </section>
+    <aside class= "aside">
+      <div class="aside__block">
+        <img class="first-picture aside__block-image" src="img/aron-visuals-1075065-unsplash.png" alt="Пура Танах Лот">
+        <img class="second-picture aside__block-image" src="img/123.png" alt="Ворота Чанди Бентар">
+        <img class="third-picture aside__block-image" src="img/sebastian-pena-lambarri-1220288-unsplash.png" alt="Часть изображения">
+      </div>
+    </aside>
+  </div>
+  <script>
+  let klick = document.querySelector('.header__menu-icon');
+  let mobile = document.querySelector('.menu-mobile');
+  let burgerClick = document.querySelector('.menu-mobile__burger');
+  klick.onclick = () => {
+    mobile.classList.toggle("visible");
+  }
+ 
+  burgerClick.onclick = () => {
+    mobile.classList.remove("visible");
+  }
+  </script> 
+</body>
+</html>
